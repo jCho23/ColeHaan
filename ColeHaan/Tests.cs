@@ -4,6 +4,7 @@ using System.Linq;
 using NUnit.Framework;
 using Xamarin.UITest;
 using Xamarin.UITest.Queries;
+using System.Threading;
 
 namespace ColeHaan
 {
@@ -47,13 +48,17 @@ namespace ColeHaan
 			app.Screenshot("We Tapped on the first shoe");
 
 			app.Tap("website_button");
-			app.Screenshot();
+			app.Screenshot("Then we Tapped on the 'Add to Cart' Button");
 
+			Thread.Sleep(4000);
 			app.ScrollDown();
+			app.Screenshot("We scrolled down to see all the sizes");
 
 			app.Tap("5");
+			app.Screenshot("Next we chose our size, '5'");
 
 			app.Tap("website_button");
+
 		}
 
 
