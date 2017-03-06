@@ -32,15 +32,24 @@ namespace ColeHaan
 		}
 
 		[Test]
-		public void FirstTest()
+		public void AddWomenShoeTest()
 		{
 			app.Tap("skip_login");
+
 
 			app.Tap("WOMEN");
 
 			app.Tap(x => x.Class("android.widget.FrameLayout").Index(1));
 
+			app.Tap("image");
 
+			app.Tap("website_button");
+
+			app.ScrollDown();
+
+			app.Tap("5");
+
+			app.Tap("website_button");
 		}
 
 
