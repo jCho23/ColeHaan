@@ -36,6 +36,11 @@ namespace ColeHaan
 		{
 			app.Tap("skip_login");
 
+			app.Tap("WOMEN");
+
+			app.Tap(x => x.Class("android.widget.FrameLayout").Index(1));
+
+
 		}
 
 
