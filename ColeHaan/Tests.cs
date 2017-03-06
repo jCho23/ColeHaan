@@ -34,7 +34,8 @@ namespace ColeHaan
 		[Test]
 		public void FirstTest()
 		{
-			
+			app.Tap("skip_login");
+
 		}
 
 
