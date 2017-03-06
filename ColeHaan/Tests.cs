@@ -35,9 +35,10 @@ namespace ColeHaan
 		public void AddWomenShoeTest()
 		{
 			app.Tap("skip_login");
-
+			app.Screenshot("Let's start by Tapping on the 'Shop Now' Button");
 
 			app.Tap("WOMEN");
+			app.Screenshot("Then we Tapped on 'Women'");
 
 			app.Tap(x => x.Class("android.widget.FrameLayout").Index(1));
 
