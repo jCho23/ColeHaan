@@ -58,9 +58,8 @@ namespace ColeHaan
 			app.Screenshot("Next we chose our size, '5'");
 
 			app.Tap("website_button");
-
+			app.Screenshot("Now we Tapped on the 'Add to Cart' Button");
 		}
-
 
 	}
 }
