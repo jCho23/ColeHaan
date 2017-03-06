@@ -41,10 +41,13 @@ namespace ColeHaan
 			app.Screenshot("Then we Tapped on 'Women'");
 
 			app.Tap(x => x.Class("android.widget.FrameLayout").Index(1));
+			app.Screenshot("Next we Tapped on 'Shoes'");
 
 			app.Tap("image");
+			app.Screenshot("We Tapped on the first shoe");
 
 			app.Tap("website_button");
+			app.Screenshot();
 
 			app.ScrollDown();
 
