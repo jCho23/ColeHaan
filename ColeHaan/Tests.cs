@@ -31,6 +31,12 @@ namespace ColeHaan
 			app.Repl();
 		}
 
+		[Test]
+		public void FirstTest()
+		{
+			
+		}
+
 
 	}
 }
